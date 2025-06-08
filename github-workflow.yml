@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'  # A las 3:00 UTC todos los días
 
 jobs:
   check-makefile:
@@ -18,5 +18,4 @@ jobs:
         run: |
           cd awesome-website
           make help
-
 
